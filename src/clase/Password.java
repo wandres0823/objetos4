@@ -10,11 +10,12 @@ package clase;
  * @author walbonis1
  */
 public class Password {
-    private int longitud;
-    private String contrasena;
-    public Password(int longitud,String contrasena ){
-    this.longitud=longitud;
-    this.contrasena=contrasena;
+   private int longitud;
+    private String contrasenia;
+    private String contraseniaa;
+    public Password(int longitud,String contrasenia ){
+        this.longitud=longitud;
+        this.contrasenia=contrasenia;
     
 }
 
@@ -23,7 +24,7 @@ public class Password {
     }
 
     public String getContrasena() {
-        return contrasena;
+        return contraseniaa;
     }
 
     public void setLongitud(int longitud) {
@@ -31,7 +32,7 @@ public class Password {
     }
 
     public void setContrasena(String contrasena) {
-        this.contrasena = contrasena;
+        this.contraseniaa = contrasena;
     }
     
     public String fuerte(){
@@ -40,7 +41,7 @@ public class Password {
         if (this.longitud>=6) {
          fuerte="La contraseña suya  es fuerte";
         }else{
-            fuerte="la contraseña esta debil";
+            fuerte="la contraseña es debil";
         }
         
         return fuerte;
@@ -51,7 +52,7 @@ public class Password {
         Password nueva_contrasena;
         
          longi = this.longitud;
-        clave = this.contrasena;
+        clave = this.contraseniaa;
         
         nueva_contrasena = new Password(longi,clave);
         return nueva_contrasena;
@@ -60,7 +61,7 @@ public class Password {
         Password pass;
        String clave;
        int longitu;
-       clave=this.contrasena;
+       clave=this.contraseniaa;
        longitu=this.longitud;
        pass=new Password(longitu,clave);
        return pass;
