@@ -11,11 +11,10 @@ package clase;
  */
 public class Password {
    private int longitud;
-    private String contrasenia;
     private String contraseniaa;
     public Password(int longitud,String contrasenia ){
         this.longitud=longitud;
-        this.contrasenia=contrasenia;
+        this.contraseniaa=contrasenia;
     
 }
 
@@ -38,10 +37,14 @@ public class Password {
     public String fuerte(){
         String fuerte;
         
-        if (this.longitud>=6) {
-         fuerte="La contraseña suya  es fuerte";
+        if (this.longitud>=10) {
+         fuerte="La contraseña suya  es fuerte y segura";
+        }else if (this.longitud>=8){
+            fuerte="la contraseña es fuerte ";
+        }else if (this.longitud>=5){
+            fuerte="la contraseña es debil ";
         }else{
-            fuerte="la contraseña es debil";
+            fuerte="la contraseña es muy debil y no es segura";
         }
         
         return fuerte;

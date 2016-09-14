@@ -93,7 +93,7 @@ int longitud;
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jLabel3.setText("ingrese su contraseña");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 110, 20));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 210, 20));
 
         txtResultado.setEditable(false);
         txtResultado.setColumns(20);
@@ -118,7 +118,7 @@ int longitud;
         });
         jPanel2.add(txtContrase, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 190, -1));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 250, 240));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 280, 240));
 
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Opciones", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial Rounded MT Bold", 0, 11), new java.awt.Color(0, 0, 102))); // NOI18N
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -221,7 +221,7 @@ int longitud;
             password2.setLongitud(longitud);
             
            if(txtLongitud1.getText().trim().isEmpty()){
-            JOptionPane.showMessageDialog(this, "Digite la Longitud", "error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Digite la Longitud de la contraseña", "error", JOptionPane.ERROR_MESSAGE);
             txtLongitud1.requestFocusInWindow();
     }else  if (txtContrase.getText().trim().isEmpty()) {
             JOptionPane.showMessageDialog(this, "Digite Contraseña", "error", JOptionPane.ERROR_MESSAGE);
@@ -233,7 +233,7 @@ int longitud;
             longitud = contraseniaa.length();
             
             p = new Password(longitud, contraseniaa);
-            JOptionPane.showMessageDialog(this, "Contraseña guardada");
+            JOptionPane.showMessageDialog(this, "Contraseña guardada exitosamente");
             
             cmdCambiar.setEnabled(true);
             cmdSeguridad.setEnabled(true);
